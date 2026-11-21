@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>STUDY HUB</h1>
+      <p>Student Notes Sharing Platform</p>
+    </header>
+
+    <section class="panel">
+      <h2>Upload Your Notes</h2>
+      <form id="uploadForm">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" placeholder="Enter subject" required>
+
+        <label for="file">Choose notes file</label>
+        <input type="file" id="file" required>
+
+        <button type="submit">Upload Notes</button>
+      </form>
+    </section>
+
+    <section class="panel">
+      <h2>Available Notes</h2>
+      <div id="notes" aria-live="polite">
+        <p class="empty">No notes uploaded yet.</p>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
